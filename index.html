@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>Slick слайдер</title>
+		<link rel="stylesheet" href="css/style.css">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width">
+	</head>
+	<body>
+
+		<button class="tablink" onclick="openPage('Home', this, 'red')">Home</button>
+        <button class="tablink" onclick="openPage('News', this, '#F0F0FF')" id="defaultOpen">News</button>
+        <button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button>
+		
+		<div id="Home" class="tabcontent">
+			<h3>Home</h3>
+			<p>Home is where the heart is..</p>
+		</div>
+		  
+		<div id="News" class="tabcontent">
+		   <h3>News</h3>
+		   <p>Some news this fine day!</p>
+		   <div class="wrapper">
+			<div class="slider">
+				<div class="slider__item filter">
+					<img src="img/slides/big/02.jpg" alt="">
+				</div>
+				<div class="slider__item">
+					<img src="img/slides/big/03.jpg" alt="">
+				</div>
+				<div class="slider__item filter">
+					<img src="img/slides/big/04.jpg" alt="">
+				</div>
+			</div>
+			
+			<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+			<script src="js/slick.min.js"></script>
+			<script src="js/script.js"></script>
+		</div>
+		</div>
+		
+		<div id="Contact" class="tabcontent">
+		   <h3>Contact</h3>
+		   <p>Get in touch, or swing by for a cup of coffee.</p>
+		</div>
+		
+
+
+
+
+
+
+	</body>
+</html>
+
+
+
